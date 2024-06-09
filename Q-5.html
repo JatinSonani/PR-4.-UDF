@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-5 </title>
+</head>
+
+<body>
+    <!-- 5. Write Write a JavaScript program to add two number of addition, subtraction, multiplication, division (using simple function) -->
+     
+    <script>
+        function add(a, b) {
+            return (a + b);
+        }
+        function sub(a, b) {
+            return (a - b);
+        }
+        function multi(a, b) {
+            return (a * b);
+        }
+        function div(a, b) {
+            if (a !== 0 && b !== 0) {
+                return (a / b);
+            } else {
+                return "error by division zero"
+            }
+        }
+        let num1 = parseInt(prompt("1"));
+        let num2 = parseInt(prompt("2"));
+
+        let addition = add(num1, num2);
+        let substraction = sub(num1, num2);
+        let multiplication = multi(num1, num2);
+        let division = div(num1, num2);
+
+        document.write(`addition of this two num = ${ addition }`);
+        document.write(`substraction of this two num = ${ substraction }`);
+        document.write(`multiplication of this two num = ${ multiplication }`);
+        document.write(`division of this two num = ${ division }`);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-7 </title>
+</head>
+<body>
+    <script>
+
+        // 7. Write a JavaScript program to find which number is greater in 3 numbers using nested if else.(using all function)
+
+          let greatnum = (a,b,c) =>{let greatest;
+            if(a>b){
+                if(a>c){
+                    greatest=a;
+                }else{
+                    greatest=c;
+                }
+            }else{
+                if(b>c){
+                    greatest=b;
+                }else{
+                    greatest=c;
+                }
+            }
+            return greatest;
+         }
+
+         let num1 = parseInt(prompt("Enter the 1st number:"));
+            let num2 = parseInt(prompt("Enter the 2nd number:"));
+            let num3 = parseInt(prompt("Enter the 3rd number:"));
+
+            let result=greatnum(num1,num2,num3);
+            document.write(`greatest number is = ${result}`);
+
+
+    </script>
+</body>
+</html>
